@@ -7,14 +7,22 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <div class="hero-container">
+    <div id="section1" class="hero-container">
         <header>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Projetos</li>
-                    <li>Tecnologias</li>
-                    <li>Contato</li>
+                    <a href="#section1" class="scroll-link">
+                        <li>Home</li>
+                    </a>
+                    <a href="#section2" class="scroll-link">
+                        <li>Tecnologias</li>
+                    </a>
+                    <a href="#section3" class="scroll-link">
+                        <li>Projetos</li>
+                    </a>
+                    <a>
+                        <li>Contato (51) 99470-6827</li>
+                    </a>
                 </ul>
             </nav>
         </header>
@@ -25,7 +33,7 @@
             <path class="a3" d="M0 40 L30 72 L60 40"></path>
         </svg>
     </div>
-    <div class="content-container">
+    <div id="section2" class="content-container">
         <div class="profile-container">
           <div class="profile-content">
             <div class="profile-card">
@@ -49,52 +57,50 @@
             </div>
           </div>
           <p class="profile-sinopse">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Nullam lorem libero, scelerisque vitae tempus ut, interdum sit amet magna. 
-            Proin eget nibh nulla. Mauris maximus quam vitae est convallis, ac commodo massa elementum. 
-            Nam urna massa, porta tempor nisi quis, hendrerit mollis elit. 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Nullam lorem libero, scelerisque vitae tempus ut, interdum sit amet magna. 
-            Proin eget nibh nulla. Mauris maximus quam vitae est convallis, ac commodo massa elementum. 
-            Nam urna massa, porta tempor nisi quis, hendrerit mollis elit. 
+            Sou um desenvolvedor web em formação com um ano de experiência em programação e desenvolvimento Full Stack.
+             Apaixonado por tecnologia e resolução de problemas, estou altamente motivado e empolgado para construir minha
+              carreira nesta área que considero a profissão da minha vida. Possuo conhecimento em tecnologias front-end como HTML, CSS 
+              e JavaScript, React, TypeScript e back-end com Node.js, bancos de dados relacionais e não-relacionais.
+               Estou constantemente aprendendo e aprimorando minhas habilidades, e busco oportunidades para aplicar meu conhecimento em projetos desafiadores e inovadores.
           </p>
         </div>
     </div>
 
-    <div class="content-container">
+    <div id="section3" class="content-container">
        <div class="project-container">
         <div class="project-content">
 
             <div class="position-container right">
                 <div class="project-card">
-                    <image class="project-image" src="./batmanimage.jpeg"/>
+                    <image class="project-image" src="./projeto-yt-foto.png"/>
                     <p class="project-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Nullam lorem libero, scelerisque vitae tempus ut, interdum sit amet magna. 
-                        Proin eget nibh nulla. Mauris maximus quam vitae est convallis, ac commodo massa elementum. 
+                        Projeto em desenvolvimento no meu curso simulando uma página do YouTube,
+                        foi feito usando ferramentas como TypeScript, pois foi necessário implementar contextos globais, para deixar a aba
+                        do menu mais interativa, na parte do back-end foi utilizado o node.js para cadastar, logar e upar vídeos do usúario.
+                        Ainda vamos implementar mais algumas funções.
                     </p>
                 </div>
             </div>
             
-            <div class="position-container left">
-                <div class="project-card card-reverse">
-                    <image class="project-image image-reverse" src="./batmanimage.jpeg"/>
-                    <p class="project-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Nullam lorem libero, scelerisque vitae tempus ut, interdum sit amet magna. 
-                        Proin eget nibh nulla. Mauris maximus quam vitae est convallis, ac commodo massa elementum. 
-                    </p>
+            <a href="https://voluble-kitten-714055.netlify.app/" target="_blank">
+                <div class="position-container left">
+                    <div class="project-card card-reverse">
+                        <image class="project-image image-reverse" src="./batmanimage.jpeg">
+                            <p class="project-text">
+                                Primeiro projeto desenvolvido no meu curso, só foi utilizado, html e css.
+                                É uma página anunciando o filme Batman, mostrando sinopse, trailer, fotos e comentários da mídia sobre o filme.
+                            </p>
+                    </div>
                 </div>
-            </div>
+
+            </a>
             
 
             <div class="position-container right">
                 <div class="project-card">
                     <image class="project-image" src="./wppimage.jpeg"/>
                     <p class="project-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Nullam lorem libero, scelerisque vitae tempus ut, interdum sit amet magna. 
-                        Proin eget nibh nulla. Mauris maximus quam vitae est convallis, ac commodo massa elementum. 
+                        Projeto em ainda no ínicio do desenvolvimento simulando a página do WhatsApp Web.
                     </p>
                 </div>
             </div>
@@ -103,33 +109,38 @@
        </div>
     </div>
 
-    <div class="content-container">
-        <div class="form-container">
-            <form
-          action="https://formspree.io/f/mpwaznpe"
-          method="POST"
-            >
-          <label>
-            Email:
-            <input type="email" name="email">
-          </label>
-          <label>
-            Nome:
-            <input type="text" name="nome">
-          </label>
-          <label>
-            Telefone:
-            <input type="number" name="telefone">
-          </label>
-          <label>
-            Mensagem:
-            <textarea name="message"></textarea>
-          </label>
-          <button type="submit">Enviar</button>
-        </form>
-        </div>
-    </div>
-
+  
     
+    
+    <!-- <div id="section4" class="form-content-container">
+        <div class="form-container">
+            <div class="form">
+                <form
+              action="https://formspree.io/f/mpwaznpe"
+              method="POST"
+                >
+              <label>
+                Email:
+                <input type="email" name="email">
+              </label>
+              <label>
+                Nome:
+                <input type="text" name="nome">
+              </label>
+              <label>
+                Telefone:
+                <input type="number" name="telefone">
+              </label>
+              <label>
+                Mensagem:
+                <textarea name="message"></textarea>
+              </label>
+              <button type="submit">Enviar</button>
+            </form>
+            </div>
+        </div>
+    </div> -->
+
+    <script src="script.js"></script>
 </body>
 </html>
